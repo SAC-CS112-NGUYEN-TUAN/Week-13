@@ -4,11 +4,16 @@ public class Main {
 	public static void main(String[] args) {
 		
 		ThreeDice dice = new ThreeDice();
-		int play = dice.Throw();
+		ThreeDice play = new ThreeDice();
 		
-		System.out.println("Throwing three dices: " + play);
-		System.out.println("dice string :"+ dice.toString());
-		System.out.println("dice"+dice);
+		int iresult = dice.Throw();
+		String sresult = play.toString(iresult);
+		
+	
+		
+		System.out.println("Throwing three dices: " + iresult);
+		System.out.println("dice string : "+ sresult);
+		
 		
 	}
 
