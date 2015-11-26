@@ -2,9 +2,14 @@
 public class Main {
 
 	public static void main(String[] args) {
-		ThreeDice play = new ThreeDice();
-		System.out.println("Throwing 3 dices: " + play.Throw());
-
+		
+		ThreeDice dice = new ThreeDice();
+		int play = dice.Throw();
+		
+		System.out.println("Throwing three dices: " + play);
+		System.out.println("dice string :"+ dice.toString());
+		System.out.println("dice"+dice);
+		
 	}
 
 }
